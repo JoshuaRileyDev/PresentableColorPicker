@@ -36,7 +36,7 @@ struct UIKitColorPicker: UIViewControllerRepresentable {
         
         let controller = UIColorPickerViewController()
         controller.selectedColor = UIColor(selection)
-        controller.supportsAlpha = false
+        controller.supportsAlpha = true
         controller.delegate = context.coordinator
         controller.title = title
         
